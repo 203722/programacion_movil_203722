@@ -26,7 +26,7 @@ class ContentBoarding extends StatelessWidget {
             Text(
               tittle,
               style: const TextStyle(
-                color: Color.fromARGB(255, 83, 37, 162),
+                color: Color.fromARGB(255, 109, 47, 152),
                 fontSize: 25,
                 fontWeight: FontWeight.bold,
                 fontFamily: 'Roboto',

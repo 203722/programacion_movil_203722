@@ -18,21 +18,18 @@ class _OnBoardingState extends State<OnBoarding> {
       "image": "assets/images/B1.png"
     },
     {
-      "tittle": "ADOPTCIÓN",
-      "text":
-          "Nulla faucibus tellus ut odio scelerisque vitae molestie lectus feugiat.",
+      "tittle": "ADOPCION",
+      "text": "Nulla faucibus tellus ut odio scelerisque vitae molestie lectus feugiat.",
       "image": "assets/images/B2.png"
     },
     {
       "tittle": "HOSPITALIDAD",
-      "text":
-          "Nulla faucibus tellus ut odio scelerisque vitae molestie lectus feugiat.",
+      "text": "Nulla faucibus tellus ut odio scelerisque vitae molestie lectus feugiat.",
       "image": "assets/images/B3.png"
     },
     {
       "tittle": "VETERINARIA",
-      "text":
-          "Nulla faucibus tellus ut odio scelerisque vitae molestie lectus feugiat.",
+      "text": "Nulla faucibus tellus ut odio scelerisque vitae molestie lectus feugiat.",
       "image": "assets/images/B4.png"
     },
     {
@@ -74,7 +71,7 @@ class _OnBoardingState extends State<OnBoarding> {
             flex: 1,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [buttomBoarding(50, 330, "Botton")],
+              children: [buttomBoarding(50, 330, "Boton")],
             )),
       ],
     ));
@@ -86,11 +83,12 @@ class _OnBoardingState extends State<OnBoarding> {
             borderRadius: BorderRadius.circular(40.0),
             side: BorderSide(
                 color: currentPage == 4
-                    ? Colors.green
+                    ? Color.fromARGB(255, 117, 167, 87)
                     : Color.fromARGB(255, 197, 196, 196),
                 width: 2)),
         minimumSize: Size(width, height),
-        backgroundColor: currentPage == 4 ? Colors.green : Colors.white,
+        backgroundColor:
+            currentPage == 4 ? Color.fromARGB(255, 117, 167, 87) : Colors.white,
         padding: const EdgeInsets.all(0));
     return Padding(
       padding: const EdgeInsets.only(top: 50, bottom: 50),
@@ -100,7 +98,7 @@ class _OnBoardingState extends State<OnBoarding> {
         child: Text(currentPage == 4 ? "Continuar" : "Siguiente",
             style: TextStyle(
               fontSize: 20,
-              color: currentPage == 4 ? Colors.white : Colors.grey,
+              color: currentPage == 4 ? Colors.white : Color.fromARGB(255, 141, 141, 141),
               fontWeight: FontWeight.bold,
             )),
       ),
@@ -124,7 +122,7 @@ AnimatedContainer Pages({required int index, required int currentPage}) {
     width: currentPage == index ? 30 : 20,
     decoration: BoxDecoration(
         color: currentPage == index
-            ? Colors.pinkAccent
+            ? Color.fromARGB(255, 252, 17, 94)
             : Color.fromARGB(255, 199, 199, 199),
         borderRadius: BorderRadius.circular(3)),
   );
